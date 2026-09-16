@@ -1,0 +1,11 @@
+{
+  "name": "est-camp-remaster",
+  "version": "0.0.1",
+  "description": "est-camp-remaster",
+  "scripts": {
+    "build":"node build-tokens.mjs"
+  },
+  "devDependencies": {
+    "style-dictionary": "^5.5.3"
+  }
+}
