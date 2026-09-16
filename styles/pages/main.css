@@ -1,0 +1,7 @@
+@import "../../dist/css/variables.css";
+
+h1 {
+  font-size: var(--font-size-display);
+  font-weight: 900;
+  color: var(--color-blue-500);
+}

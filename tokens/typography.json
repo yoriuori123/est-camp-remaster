@@ -1,0 +1,84 @@
+{
+  "font-size": {
+    "md": {
+      "$value": 18,
+      "$type": "number"
+    },
+    "lg": {
+      "$value": 20,
+      "$type": "number"
+    },
+    "h3": {
+      "$value": 40,
+      "$type": "number"
+    },
+    "sm": {
+      "$value": 16,
+      "$type": "number"
+    },
+    "h2": {
+      "$value": 60,
+      "$type": "number"
+    },
+    "display": {
+      "$value": 80,
+      "$type": "number"
+    },
+    "xl": {
+      "$value": 24,
+      "$type": "number"
+    },
+    "2xl": {
+      "$value": 28,
+      "$type": "number"
+    },
+    "3xl": {
+      "$value": 32,
+      "$type": "number"
+    },
+    "4xl": {
+      "$value": 36,
+      "$type": "number"
+    },
+    "5xl": {
+      "$value": 40,
+      "$type": "number"
+    }
+  },
+  "letter-spacing": {
+    "tight": {
+      "$value": -0.03999999910593033,
+      "$type": "number"
+    },
+    "normal": {
+      "$value": 0,
+      "$type": "number"
+    },
+    "wide": {
+      "$value": 0.03999999910593033,
+      "$type": "number"
+    },
+    "widest": {
+      "$value": 0.20000000298023224,
+      "$type": "number"
+    }
+  },
+  "line-height": {
+    "none": {
+      "$value": 1,
+      "$type": "number"
+    },
+    "tight": {
+      "$value": 1.2999999523162842,
+      "$type": "number"
+    },
+    "normal": {
+      "$value": 1.5,
+      "$type": "number"
+    },
+    "relaxed": {
+      "$value": 1.600000023841858,
+      "$type": "number"
+    }
+  }
+}
