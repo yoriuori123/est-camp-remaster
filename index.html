@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ESTCAMP CLONE</title>
+    <title>ESTCAMP REMASTERED</title>
+    <link rel="stylesheet" href="./styles/pages/main.css" />
   </head>
   <style>
     body {
@@ -29,30 +30,53 @@
     }
   </style>
   <body>
-    <h1>testing PR</h1>
-    <div class="yt-cover">
-      <div class="yt-container">
-        <iframe
-          frameborder="0"
-          allowfullscreen=""
-          allow="
-            accelerometer;
-            autoplay;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            picture-in-picture;
-            web-share;
-            fullscreen;
-          "
-          referrerpolicy="strict-origin-when-cross-origin"
-          title="유튜브 비디오 플레이어"
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/vsjnd2eaR-U?autoplay=1&loop=1&playlist=vsjnd2eaR-U&controls=0&showinfo=0&rel=0&modestbranding=1&mute=1&enablejsapi=1&origin=https%3A%2F%2Festbootcamp.co.kr&widgetid=183&forigin=https%3A%2F%2Festbootcamp.co.kr%2F&aoriginsup=1&gporigin=https%3A%2F%2Fwww.google.com%2F&vf=2"
-          id="widget184"
-        ></iframe>
+    <header>
+      <div class="inner-header flex-between">
+        <h1>
+          <a href="/">
+            <img
+              src="./public/assets/images/layout/est-camp-ci.png"
+              alt="이스트캠프 로고"
+            />
+            <span class="sr-only">메인 페이지로 이동</span>
+          </a>
+        </h1>
+
+        <nav class="gnb">
+          <ul class="flex">
+            <li>
+              <a
+                class="header-link"
+                href="https://aichallengers.careerlink.kr/2"
+                >AI 챌린저스</a
+              >
+            </li>
+            <li>
+              <a
+                class="header-link"
+                href="https://energetic-knot-bb6.notion.site/34ca3cbf77f68049a497d51a485ffab8"
+                >인공지능사관학교</a
+              >
+            </li>
+            <li>
+              <a class="header-link" href="https://estbootcamp.co.kr/jobs"
+                >모집과정</a
+              >
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="hamburger-btn"
+            aria-label="햄버거 메뉴"
+            aria-expanded="false"
+          >
+            <img
+              src="./public/assets/icons/layout/icon-hamburger.svg"
+              alt="asd"
+            />
+          </button>
+        </nav>
       </div>
-    </div>
+    </header>
   </body>
 </html>

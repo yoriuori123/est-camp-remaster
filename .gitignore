@@ -1,0 +1,22 @@
+# Windows 캐시
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS 캐시
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 코드에디터 IDE 캐시 (VS Code)
+.vscode/
+.history/
+
+# 린트 캐시
+.eslintcache
+
+# 노드모듈
+node_modules/
+
+# 빌드 Output
+dist/

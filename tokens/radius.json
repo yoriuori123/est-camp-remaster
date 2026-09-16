@@ -1,0 +1,22 @@
+{
+  "radius-full": {
+    "$value": 999,
+    "$type": "number"
+  },
+  "radius-xl": {
+    "$value": 20,
+    "$type": "number"
+  },
+  "radius-lg": {
+    "$value": 16,
+    "$type": "number"
+  },
+  "radius-md": {
+    "$value": 12,
+    "$type": "number"
+  },
+  "radius-sm": {
+    "$value": 8,
+    "$type": "number"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "space-1": {
+    "$value": 8,
+    "$type": "number"
+  },
+  "space-2": {
+    "$value": 12,
+    "$type": "number"
+  },
+  "space-3": {
+    "$value": 16,
+    "$type": "number"
+  },
+  "space-4": {
+    "$value": 20,
+    "$type": "number"
+  },
+  "space-5": {
+    "$value": 24,
+    "$type": "number"
+  },
+  "space-6": {
+    "$value": 28,
+    "$type": "number"
+  },
+  "space-7": {
+    "$value": 32,
+    "$type": "number"
+  },
+  "space-8": {
+    "$value": 36,
+    "$type": "number"
+  },
+  "space-9": {
+    "$value": 40,
+    "$type": "number"
+  },
+  "space-section-md": {
+    "$value": 80,
+    "$type": "number"
+  },
+  "space-section-sm": {
+    "$value": 60,
+    "$type": "number"
+  },
+  "space-section-lg": {
+    "$value": 220,
+    "$type": "number"
+  }
+}
