@@ -1,0 +1,94 @@
+{
+  "text": {
+    "home": {
+      "primary": {
+        "$value": "{blue.500}",
+        "$type": "color"
+      }
+    },
+    "inverse": {
+      "$value": "{white}",
+      "$type": "color"
+    },
+    "secondary": {
+      "$value": "{black.500}",
+      "$type": "color"
+    },
+    "frontend": {
+      "primary": {
+        "$value": "{green.500}",
+        "$type": "color"
+      },
+      "primary-light": {
+        "$value": "{green.400}",
+        "$type": "color"
+      }
+    },
+    "muted": {
+      "$value": "{black.400}",
+      "$type": "color"
+    }
+  },
+  "button": {
+    "text": {
+      "$value": "{white}",
+      "$type": "color"
+    },
+    "primary": {
+      "bg": {
+        "$value": "{blue.500}",
+        "$type": "color"
+      },
+      "hover": {
+        "$value": "{blue.700}",
+        "$type": "color"
+      }
+    },
+    "secondary": {
+      "bg": {
+        "$value": "{green.600}",
+        "$type": "color"
+      },
+      "hover": {
+        "$value": "{green.700}",
+        "$type": "color"
+      }
+    },
+    "disabled": {
+      "$value": "{gray.500}",
+      "$type": "color"
+    }
+  },
+  "badge": {
+    "primary": {
+      "bg": {
+        "$value": "{green.100}",
+        "$type": "color"
+      },
+      "text": {
+        "$value": "{green.500}",
+        "$type": "color"
+      }
+    },
+    "secondary": {
+      "bg": {
+        "$value": "{brown.200}",
+        "$type": "color"
+      },
+      "text": {
+        "$value": "{brown.500}",
+        "$type": "color"
+      }
+    }
+  },
+  "anchor": {
+    "text": {
+      "$value": "{blue.500}",
+      "$type": "color"
+    },
+    "hover": {
+      "$value": "{blue.700}",
+      "$type": "color"
+    }
+  }
+}
