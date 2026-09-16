@@ -1,0 +1,48 @@
+{
+  "text-size": {
+    "text-md": {
+      "$value": 18,
+      "$type": "number"
+    },
+    "text-lg": {
+      "$value": 20,
+      "$type": "number"
+    },
+    "h3": {
+      "$value": 40,
+      "$type": "number"
+    },
+    "text-sm": {
+      "$value": 16,
+      "$type": "number"
+    },
+    "h2": {
+      "$value": 60,
+      "$type": "number"
+    },
+    "display": {
+      "$value": 80,
+      "$type": "number"
+    },
+    "text-xl": {
+      "$value": 24,
+      "$type": "number"
+    },
+    "text-2xl": {
+      "$value": 28,
+      "$type": "number"
+    },
+    "text-3xl": {
+      "$value": 32,
+      "$type": "number"
+    },
+    "text-4xl": {
+      "$value": 36,
+      "$type": "number"
+    },
+    "text-5xl": {
+      "$value": 40,
+      "$type": "number"
+    }
+  }
+}
