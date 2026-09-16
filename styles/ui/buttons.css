@@ -41,7 +41,8 @@ button {
 
     .btn-text {
       display: inline-block;
-      font-size: var(--font-size-md);
+      font-size: 14px;
+      padding: var(--spacing-2) var(--spacing-3);
     }
 
     .btn-text-lg {
