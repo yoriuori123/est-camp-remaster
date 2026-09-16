@@ -1,8 +1,16 @@
 {
   "text": {
-    "home": {
-      "primary": {
+    "primary": {
+      "home": {
         "$value": "{blue.500}",
+        "$type": "color"
+      },
+      "frontend": {
+        "$value": "{green.500}",
+        "$type": "color"
+      },
+      "frontend-light": {
+        "$value": "{green.400}",
         "$type": "color"
       }
     },
@@ -13,16 +21,6 @@
     "secondary": {
       "$value": "{black.500}",
       "$type": "color"
-    },
-    "frontend": {
-      "primary": {
-        "$value": "{green.500}",
-        "$type": "color"
-      },
-      "primary-light": {
-        "$value": "{green.400}",
-        "$type": "color"
-      }
     },
     "muted": {
       "$value": "{black.400}",
