@@ -1,0 +1,28 @@
+/* Display Heading BASE 스타일 */
+.display-heading {
+  font-weight: 200;
+  font-size: var(--font-size-display);
+  color: var(--color-text-primary-home);
+  gap: var(--spacing-5);
+
+  b {
+    font-weight: 700;
+  }
+
+  p {
+    font-size: var(--font-size-3xl);
+  }
+
+  img {
+    width: 44px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 64px;
+    gap: var(--spacing-4);
+
+    img {
+      width: 36px;
+    }
+  }
+}

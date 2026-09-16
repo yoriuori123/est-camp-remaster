@@ -3,12 +3,14 @@
 @import "../utils.css";
 @import "../ui/links.css";
 @import "../ui/buttons.css";
+@import "../ui/section-headings.css";
 
 body {
   font-family: "pretendard";
+  color: var(--color-text-secondary);
 }
 
-/* 헤더 섹션 */
+/* header 섹션 */
 header {
   background-color: var(--color-blue-100);
   position: sticky;
@@ -19,7 +21,7 @@ header {
     max-width: 1200px;
     height: 72px;
     margin: 0 auto;
-    gap: 20px;
+    gap: var(--spacing-4);
 
     h1 img {
       max-width: 180px;
@@ -57,7 +59,7 @@ header {
   }
 }
 
-/* 히어로 베너 섹션 */
+/* hero 베너 섹션 */
 .hero-section {
   img {
     width: 100%;
@@ -66,6 +68,84 @@ header {
 
     @media screen and (max-width: 768px) {
       height: 360px;
+    }
+  }
+}
+
+/* course 섹션 */
+.course-section {
+  margin-top: 120px;
+  padding: 0 var(--spacing-4);
+  gap: 120px;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    ul {
+      flex-wrap: wrap;
+      gap: 80px 60px;
+
+      img {
+        max-width: 320px;
+        width: 100%;
+        border-radius: var(--radius-md);
+      }
+
+      .card-description {
+        margin-top: var(--spacing-8);
+        text-align: center;
+        font-weight: 500;
+
+        :first-child {
+          font-size: var(--font-size-3xl);
+        }
+
+        :last-child {
+          margin-top: var(--spacing-4);
+          font-size: var(--font-size-lg);
+          color: var(--color-text-muted);
+        }
+      }
+
+      button {
+        margin-top: var(--spacing-5);
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: var(--spacing-section-md);
+    gap: var(--spacing-section-md);
+
+    .container {
+      ul {
+        gap: 60px var(--spacing-9);
+
+        img {
+          max-width: 280px;
+        }
+
+        .card-description {
+          margin-top: var(--spacing-6);
+          text-align: center;
+          font-weight: 500;
+
+          :first-child {
+            font-size: var(--font-size-2xl);
+          }
+
+          :last-child {
+            margin-top: var(--spacing-3);
+            font-size: var(--font-size-md);
+            color: var(--color-text-muted);
+          }
+        }
+
+        button {
+          margin-top: var(--spacing-4);
+        }
+      }
     }
   }
 }
