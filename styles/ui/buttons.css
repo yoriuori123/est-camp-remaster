@@ -1,0 +1,10 @@
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger-btn {
+  width: 40px;
+}

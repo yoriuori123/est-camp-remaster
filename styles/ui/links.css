@@ -1,0 +1,19 @@
+.header-link {
+  font-size: var(--font-size-md);
+  color: var(--color-anchor-text);
+  font-weight: 600;
+
+  &:hover {
+    color: var(--color-anchor-hover);
+  }
+}
+
+.link {
+  font-size: var(--font-size-);
+  color: var(--color-anchor-text);
+  font-weight: 600;
+
+  &:hover {
+    color: var(--color-anchor-hover);
+  }
+}

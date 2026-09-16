@@ -1,7 +1,57 @@
+@import "../reset.css";
 @import "../../dist/css/variables.css";
+@import "../utils.css";
+@import "../ui/links.css";
+@import "../ui/buttons.css";
 
-h1 {
-  font-size: var(--font-size-display);
-  font-weight: 900;
-  color: var(--color-blue-500);
+body {
+  font-family: "pretendard";
+}
+
+header {
+  background-color: var(--color-blue-100);
+  position: sticky;
+  top: 0;
+  padding: 0 20px;
+
+  .inner-header {
+    max-width: 1200px;
+    height: 72px;
+    margin: 0 auto;
+    gap: 20px;
+
+    h1 img {
+      max-width: 180px;
+      width: 100%;
+    }
+
+    .gnb {
+      ul {
+        gap: var(--spacing-4);
+      }
+
+      .hamburger-btn {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      height: 60px;
+
+      h1 img {
+        max-width: 140px;
+        width: 100%;
+      }
+
+      .gnb {
+        ul {
+          display: none;
+        }
+
+        .hamburger-btn {
+          display: block;
+        }
+      }
+    }
+  }
 }
