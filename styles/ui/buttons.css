@@ -3,8 +3,68 @@ button {
   border: none;
   cursor: pointer;
   padding: 0;
+  line-height: 1;
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: var(--color-button-disabled);
+  }
 }
 
+/* header 모바일 햄버거 메뉴 버튼 */
 .hamburger-btn {
   width: 40px;
+}
+
+/* Button BASE 스타일 */
+.btn {
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  color: var(--color-button-text);
+
+  .btn-text {
+    display: inline-block;
+    font-size: var(--font-size-lg);
+    padding: 14px var(--spacing-4);
+    text-shadow: 0 0 4px #ffffff4d;
+  }
+
+  .btn-text-lg {
+    display: inline-block;
+    font-size: var(--font-size-xl);
+    padding: var(--spacing-3) var(--spacing-5);
+    text-shadow: 0 0 4px #ffffff4d;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-weight: 600;
+
+    .btn-text {
+      display: inline-block;
+      font-size: var(--font-size-md);
+    }
+
+    .btn-text-lg {
+      display: inline-block;
+      font-size: var(--font-size-lg);
+    }
+  }
+}
+
+/* Button Primary 스타일 */
+.btn-primary {
+  background-color: var(--color-button-primary-bg);
+
+  &:hover {
+    background-color: var(--color-button-primary-hover);
+  }
+}
+
+/* Button Secondary 스타일 */
+.btn-secondary {
+  background-color: var(--color-button-secondary-bg);
+
+  &:hover {
+    background-color: var(--color-button-secondary-hover);
+  }
 }

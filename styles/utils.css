@@ -10,6 +10,7 @@
   border-width: 0;
 }
 
+/* layout 유틸 */
 .flex {
   display: flex;
   align-items: center;
@@ -39,4 +40,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+/* 디자인 유딜 */
+.card-shadow-strong {
+  box-shadow: 0 2px 12px var(--color-blue-500);
 }
