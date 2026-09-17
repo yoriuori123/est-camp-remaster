@@ -226,7 +226,7 @@ header {
   }
 
   @media screen and (max-width: 768px) {
-    margin-top: var(--spacing-section-md);
+    margin-top: 120px;
     gap: var(--spacing-9);
 
     .container {
@@ -321,7 +321,7 @@ header {
   }
 
   @media screen and (max-width: 768px) {
-    margin-top: var(--spacing-section-md);
+    margin-top: 120px;
     gap: var(--spacing-9);
 
     .yt-container {
@@ -338,6 +338,7 @@ header {
   }
 }
 
+/* 이스트캠프 스토리 섹션 */
 #story-section {
   margin-top: var(--spacing-section-lg);
   gap: var(--spacing-section-sm);
@@ -371,6 +372,7 @@ header {
           font-weight: 500;
           font-size: var(--font-size-md);
           line-height: var(--leading-normal);
+          word-break: keep-all;
         }
 
         p {
@@ -382,7 +384,86 @@ header {
   }
 
   @media screen and (max-width: 768px) {
-    margin-top: var(--spacing-section-md);
+    margin-top: 120px;
+    gap: 40px;
+    padding: 0px var(--spacing-4);
+
+    .container {
+      .card {
+        max-width: 440px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* 관심이 생기셨군요 섹션 */
+#interest-section {
+  margin-top: var(--spacing-section-lg);
+  gap: var(--spacing-section-sm);
+  padding: 0px var(--spacing-9);
+
+  .container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+
+    ul {
+      flex-wrap: wrap;
+      gap: 60px var(--spacing-9);
+    }
+
+    .card {
+      max-width: 440px;
+      width: 100%;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+
+      .thumbnail {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .description {
+        gap: var(--spacing-3);
+        padding: var(--spacing-5);
+        line-height: var(--leading-normal);
+
+        h3 {
+          font-weight: 500;
+          font-size: var(--font-size-lg);
+          word-break: keep-all;
+        }
+
+        p {
+          font-weight: 300;
+          font-size: var(--font-size-md);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 120px;
     gap: var(--spacing-9);
+    padding: 0px var(--spacing-4);
+
+    .container {
+      ul {
+        gap: var(--spacing-9);
+      }
+
+      .card > .description {
+        padding: var(--spacing-3);
+
+        h3 {
+          font-size: var(--font-size-md);
+        }
+
+        p {
+          font-size: var(--font-size-sm);
+        }
+      }
+    }
   }
 }
