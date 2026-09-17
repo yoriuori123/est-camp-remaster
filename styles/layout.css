@@ -12,10 +12,10 @@ body {
 
 /* header 섹션 */
 header {
-  background-color: var(--color-blue-100);
   position: sticky;
   top: 0;
   padding: 0 var(--spacing-4);
+  background-color: var(--color-blue-100);
 
   .inner-header {
     max-width: 1200px;
@@ -62,6 +62,7 @@ header {
 /* 푸터 섹션 */
 footer {
   padding: var(--spacing-9) var(--spacing-4);
+  background-color: var(--color-blue-100);
 
   .inner-footer {
     max-width: 1200px;
