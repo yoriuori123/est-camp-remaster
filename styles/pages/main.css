@@ -326,6 +326,63 @@ header {
 
     .yt-container {
       height: 480px;
+
+      .yt-overlay {
+        gap: var(--spacing-5);
+
+        h3 {
+          font-size: var(--font-size-4xl);
+        }
+      }
     }
+  }
+}
+
+#story-section {
+  margin-top: var(--spacing-section-lg);
+  gap: var(--spacing-section-sm);
+  padding: 0px var(--spacing-9);
+
+  .container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+
+    ul {
+      flex-wrap: wrap;
+      gap: var(--spacing-9) 25px;
+    }
+
+    .card {
+      width: 260px;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+
+      .thumbnail {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .description {
+        gap: var(--spacing-3);
+        padding: 16px 16px 20px 16px;
+
+        h3 {
+          font-weight: 500;
+          font-size: var(--font-size-md);
+          line-height: var(--leading-normal);
+        }
+
+        p {
+          font-weight: 300;
+          line-height: var(--leading-normal);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: var(--spacing-section-md);
+    gap: var(--spacing-9);
   }
 }

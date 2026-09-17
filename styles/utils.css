@@ -51,3 +51,7 @@
 .card-shadow-strong {
   box-shadow: 0 2px 12px var(--color-blue-500);
 }
+
+.card-shadow {
+  box-shadow: 0 2px 12px rgba(0, 117, 255, 0.15);
+}

@@ -9,11 +9,22 @@
 }
 
 .link {
+  width: fit-content;
+  font-weight: 600;
   font-size: var(--font-size-);
   color: var(--color-anchor-text);
-  font-weight: 600;
+  gap: var(--spacing-1);
+
+  .icon-arrow-right {
+    width: 16px;
+    transition: all 0.5s ease;
+  }
 
   &:hover {
     color: var(--color-anchor-hover);
+
+    .icon-arrow-right {
+      transform: translateX(12px);
+    }
   }
 }
