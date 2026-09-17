@@ -6,7 +6,9 @@
 @import "../ui/headings.css";
 
 body {
+  max-width: 1920px;
   min-width: 360px;
+  margin: 0 auto;
   font-family: "pretendard";
   color: var(--color-text-secondary);
 }
@@ -16,7 +18,7 @@ header {
   background-color: var(--color-blue-100);
   position: sticky;
   top: 0;
-  padding: 0 20px;
+  padding: 0 var(--spacing-4);
 
   .inner-header {
     max-width: 1200px;
@@ -156,6 +158,10 @@ header {
   margin-top: var(--spacing-section-lg);
   gap: var(--spacing-section-sm);
 
+  h2 {
+    padding: 0px var(--spacing-4);
+  }
+
   .container {
     width: 100%;
     height: 720px;
@@ -285,6 +291,10 @@ header {
 #ai-school-section {
   margin-top: var(--spacing-section-lg);
   gap: var(--spacing-section-sm);
+
+  h2 {
+    padding: 0px var(--spacing-4);
+  }
 
   .yt-container {
     position: relative;
@@ -573,6 +583,10 @@ header {
   margin-top: var(--spacing-section-lg);
   gap: var(--spacing-section-sm);
 
+  h2 {
+    padding: 0px var(--spacing-4);
+  }
+
   .container {
     position: relative;
 
@@ -591,5 +605,58 @@ header {
   @media screen and (max-width: 768px) {
     margin-top: 120px;
     gap: var(--spacing-9);
+  }
+}
+
+/* 푸터 섹션 */
+footer {
+  padding: var(--spacing-9) var(--spacing-4);
+
+  .inner-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+  }
+
+  .container {
+    gap: var(--spacing-7);
+
+    .footer-nav {
+      font-weight: 500;
+
+      ul {
+        gap: var(--spacing-2);
+      }
+    }
+
+    address {
+      font-weight: 300;
+
+      ul {
+        gap: var(--spacing-3);
+      }
+    }
+
+    small {
+      font-weight: 300;
+      font-size: 14px;
+    }
+  }
+
+  .sns-nav > ul {
+    gap: var(--spacing-2);
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: var(--spacing-7) var(--spacing-4);
+
+    .inner-footer {
+      flex-direction: column-reverse;
+      gap: var(--spacing-6);
+    }
+
+    .container {
+      font-size: 14px;
+    }
   }
 }
