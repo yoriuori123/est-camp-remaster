@@ -567,3 +567,29 @@ header {
     }
   }
 }
+
+/* 상담 신청 섹션 */
+#cs-section {
+  margin-top: var(--spacing-section-lg);
+  gap: var(--spacing-section-sm);
+
+  .container {
+    position: relative;
+
+    img {
+      min-height: 400px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .btn {
+      position: absolute;
+      bottom: 25%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 120px;
+    gap: var(--spacing-9);
+  }
+}

@@ -14,7 +14,6 @@
 | ------ | ------------- | ------------------------------ |
 | 유재진 | FE개발/배포   | https://github.com/yoriuori123 |
 | 이소망 | FE개발/디자인 | https://github.com/HopeFullee  |
-|        |               |                                |
 
 ## 🔗 배포 URL
 
