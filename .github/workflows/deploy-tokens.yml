@@ -1,4 +1,4 @@
-name: Build and Deploy Style Dictionary
+name: Build and Deploy Site with Style Dictionary
 
 on:
   push:
@@ -26,13 +26,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build Style Dictionary
+      # root 경로에 dist/output.css 생성
+      - name: Build Style Dictionary Tokens
         run: npm run build
 
+      # Crucial Step: Bundles the ENTIRE root workspace (your index.html + the new dist/ folder)
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist # 디자인토큰 output 경로
+          path: "."
 
   deploy:
     environment:
