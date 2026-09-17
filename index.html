@@ -3,11 +3,202 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ESTCAMP CLONE</title>
-    <link rel="stylesheet" href="./styles/reset.css" />
+    <title>ESTCAMP REMASTERED</title>
     <link rel="stylesheet" href="./styles/pages/main.css" />
   </head>
+  <style></style>
   <body>
-    <h1>ah shit, here we go again</h1>
+    <header>
+      <div class="inner-header flex-between">
+        <h1>
+          <a href="/">
+            <img
+              src="./public/assets/images/layout/est-camp-ci.png"
+              alt="이스트캠프 로고"
+            />
+            <span class="sr-only">메인 페이지로 이동</span>
+          </a>
+        </h1>
+
+        <nav class="gnb">
+          <ul class="flex">
+            <li>
+              <a
+                class="header-link"
+                href="https://aichallengers.careerlink.kr/2"
+                >AI 챌린저스</a
+              >
+            </li>
+            <li>
+              <a
+                class="header-link"
+                href="https://energetic-knot-bb6.notion.site/34ca3cbf77f68049a497d51a485ffab8"
+                >인공지능사관학교</a
+              >
+            </li>
+            <li>
+              <a class="header-link" href="https://estbootcamp.co.kr/jobs"
+                >모집과정</a
+              >
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="hamburger-btn"
+            aria-label="햄버거 메뉴"
+            aria-expanded="false"
+          >
+            <img
+              src="./public/assets/icons/layout/icon-hamburger.svg"
+              alt="asd"
+            />
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero-section">
+        <img
+          src="./public/assets/images/main/hero-image.png"
+          alt="이스트캠프 히어로 베너"
+        />
+      </section>
+
+      <section id="course-section" class="flex-col">
+        <h2 class="display-heading flex-col-center">
+          <span><b>EST</b>Soft</span>
+          <img src="./public/assets/icons/main/icon-cross.svg" alt="" />
+          <span>Boot<b>CAMP</b></span>
+        </h2>
+
+        <div class="container">
+          <ul class="flex-center">
+            <li class="flex-col-center">
+              <img
+                class="card-shadow-strong"
+                src="./public/assets/images/main/course_01.png"
+                alt="AI 휴먼 부트캠프 썸네일"
+              />
+              <div class="card-description">
+                <p>AI 휴먼</p>
+                <p>모집기간 | ~9.28 (월)</p>
+              </div>
+              <button class="btn btn-primary" type="button">
+                <span class="btn-text">10기 신청하기</span>
+              </button>
+            </li>
+
+            <li class="flex-col-center">
+              <img
+                class="card-shadow-strong"
+                src="./public/assets/images/main/course_02.png"
+                alt="AI 퀸트 부트캠프 썸네일"
+              />
+              <div class="card-description">
+                <p>AI 퀸트</p>
+                <p>모집기간 | 추후 안내</p>
+              </div>
+              <button class="btn" type="button" disabled>
+                <span class="btn-text">모집 예정</span>
+              </button>
+            </li>
+
+            <li class="flex-col-center">
+              <img
+                class="card-shadow-strong"
+                src="./public/assets/images/main/course_03.png"
+                alt="프론트엔드 개발 부트캠프 썸네일"
+              />
+              <div class="card-description">
+                <p>프론트엔드 개발</p>
+                <p>모집기간 | ~9.27 (일)</p>
+              </div>
+              <button class="btn btn-primary" type="button">
+                <span class="btn-text">17기 신청하기</span>
+              </button>
+            </li>
+
+            <li class="flex-col-center">
+              <img
+                class="card-shadow-strong"
+                src="./public/assets/images/main/course_04.png"
+                alt="IOS 앱 개발 부트캠프 썸네일"
+              />
+              <div class="card-description">
+                <p>IOS 앱 개발</p>
+                <p>모집기간 | ~9.20 (일)</p>
+              </div>
+              <button class="btn btn-primary" type="button">
+                <span class="btn-text">7기 신청하기</span>
+              </button>
+            </li>
+
+            <li class="flex-col-center">
+              <img
+                class="card-shadow-strong"
+                src="./public/assets/images/main/course_05.png"
+                alt="가디언즈 인프라보안 부트캠프 썸네일"
+              />
+              <div class="card-description">
+                <p>가디언즈 인프라보안</p>
+                <p>모집기간 | 추후 안내</p>
+              </div>
+              <button class="btn" type="button" disabled>
+                <span class="btn-text">모집예정</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="challengers-section" class="flex-col">
+        <h2 class="section-heading flex-col-center">
+          <span><b>EST</b> AI 챌린저스</span>
+        </h2>
+
+        <div class="container flex-col-center">
+          <article class="flex-col">
+            <h3 class="flex-col">
+              <img
+                src="./public/assets/images/main/est-ci-white.png"
+                alt="이스트소프트 로고"
+              />
+              <span>AI<b>Challengers</b></span>
+            </h3>
+
+            <div class="description">
+              <p>
+                방학 5주 완성 AI 부트캠프
+                <br />
+                <span>AI 챌린저스 2기!</span>
+              </p>
+              <p>
+                <b>온라인 학습</b>으로 어디서든 참여 가능해요.
+                <br />
+                <b>광주 해커톤에 일경험</b>까지!
+              </p>
+            </div>
+
+            <div class="sponsors flex">
+              <img
+                src="./public/assets/icons/main/icon-고용노동부.svg"
+                alt="고용노동부 로고"
+              />
+              <img
+                src="./public/assets/icons/main/icon-대한상공회의소.svg"
+                alt="대한상공회의소 로고"
+              />
+            </div>
+          </article>
+
+          <div class="flex-center">
+            <button class="btn btn-primary">
+              <span class="btn-text">신청 하기</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
