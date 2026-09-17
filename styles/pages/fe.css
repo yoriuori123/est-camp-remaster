@@ -5,3 +5,13 @@
 @import "../ui/buttons.css";
 @import "../ui/headings.css";
 @import "../layout.css";
+
+/* 히로 섹션 */
+#hero-section {
+  img {
+    width: 100%;
+    min-height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
