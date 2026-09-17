@@ -6,6 +6,7 @@
 @import "../ui/headings.css";
 
 body {
+  min-width: 360px;
   font-family: "pretendard";
   color: var(--color-text-secondary);
 }
@@ -454,7 +455,7 @@ header {
       }
 
       .card > .description {
-        padding: var(--spacing-3);
+        padding: 16px 16px 20px 16px;
 
         h3 {
           font-size: var(--font-size-md);
@@ -462,6 +463,105 @@ header {
 
         p {
           font-size: var(--font-size-sm);
+        }
+      }
+    }
+  }
+}
+
+/* 신청 대상자인가요 섹션 */
+#requirement-section {
+  margin-top: var(--spacing-section-lg);
+  gap: var(--spacing-section-sm);
+  padding: 0px var(--spacing-9);
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    ul {
+      flex-wrap: wrap;
+      gap: var(--spacing-4) 0px;
+    }
+
+    .card {
+      max-width: 500px;
+      width: 100%;
+      justify-content: start;
+
+      img {
+        width: 180px;
+        object-fit: cover;
+      }
+
+      .description {
+        gap: var(--spacing-3);
+        line-height: var(--leading-normal);
+
+        p {
+          font-weight: 500;
+          font-size: var(--font-size-2xl);
+        }
+
+        &.graduation {
+          gap: var(--spacing-1);
+
+          .sub-list {
+            font-weight: 300;
+            font-size: var(--font-size-md);
+            line-height: var(--leading-relaxed);
+
+            li::before {
+              content: "•";
+              font-weight: bold;
+              font-size: 1.25em;
+              line-height: 1;
+              color: var(--color-text-muted);
+              margin-right: var(--spacing-1);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 120px;
+    gap: var(--spacing-9);
+    padding: 0px var(--spacing-4);
+
+    .container {
+      .card {
+        max-width: 380px;
+
+        img {
+          width: 120px;
+        }
+
+        .description {
+          gap: var(--spacing-2);
+
+          p {
+            font-size: var(--font-size-lg);
+          }
+
+          a {
+            font-weight: 500;
+            font-size: 14px;
+
+            span {
+              width: 14px;
+            }
+          }
+
+          &.graduation > .sub-list {
+            font-size: 14px;
+
+            li::before {
+              font-size: 1em;
+              margin-right: 4px;
+            }
+          }
         }
       }
     }
