@@ -41,13 +41,14 @@ button {
 
     .btn-text {
       display: inline-block;
-      font-size: 14px;
-      padding: var(--spacing-2) var(--spacing-3);
+      font-size: var(--font-size-sm);
+      padding: var(--spacing-2) 18px;
     }
 
     .btn-text-lg {
       display: inline-block;
-      font-size: var(--font-size-lg);
+      font-size: var(--font-size-md);
+      padding: 14px var(--spacing-4);
     }
   }
 }

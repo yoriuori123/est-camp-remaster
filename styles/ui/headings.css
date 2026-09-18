@@ -1,16 +1,17 @@
 /* Display Heading 스타일 */
 .display-heading {
   font-weight: 200;
-  font-size: var(--font-size-display);
+  font-size: 112px;
+  letter-spacing: -0.02em;
   color: var(--color-text-primary-home);
-  gap: var(--spacing-5);
+  gap: var(--spacing-4);
 
   b {
     font-weight: 700;
   }
 
   img {
-    width: 44px;
+    width: 48px;
   }
 
   @media screen and (max-width: 768px) {
@@ -27,9 +28,9 @@
 .section-heading {
   font-weight: 200;
   font-size: var(--font-size-h2);
+  line-height: var(--leading-tight);
   color: var(--color-text-primary-home);
-  gap: var(--spacing-5);
-  line-height: 1.1;
+  gap: var(--spacing-4);
   text-align: center;
   word-break: keep-all;
 
@@ -37,10 +38,19 @@
     font-weight: 700;
   }
 
+  /* 하단 서브 제목 */
   p {
     color: var(--color-text-secondary);
     font-size: var(--font-size-3xl);
     line-height: var(--leading-tight);
+  }
+
+  /* 상단 서브 제목 */
+  .heading-summary {
+    font-weight: 300;
+    font-size: var(--font-size-xl);
+    color: var(--color-text-primary-frontend-light);
+    letter-spacing: 0.3em;
   }
 
   @media screen and (max-width: 768px) {

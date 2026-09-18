@@ -14,6 +14,8 @@
   font-size: var(--font-size-);
   color: var(--color-anchor-text);
   gap: var(--spacing-1);
+  line-height: 1;
+  word-break: keep-all;
 
   .icon-arrow-right {
     width: 16px;

@@ -4,71 +4,14 @@
 @import "../ui/links.css";
 @import "../ui/buttons.css";
 @import "../ui/headings.css";
-
-body {
-  font-family: "pretendard";
-  color: var(--color-text-secondary);
-}
-
-/* header 섹션 */
-header {
-  background-color: var(--color-blue-100);
-  position: sticky;
-  top: 0;
-  padding: 0 20px;
-
-  .inner-header {
-    max-width: 1200px;
-    height: 72px;
-    margin: 0 auto;
-    gap: var(--spacing-4);
-
-    h1 img {
-      max-width: 180px;
-      width: 100%;
-    }
-
-    .gnb {
-      ul {
-        gap: var(--spacing-4);
-      }
-
-      .hamburger-btn {
-        display: none;
-      }
-    }
-
-    @media screen and (max-width: 768px) {
-      height: 60px;
-
-      h1 img {
-        max-width: 140px;
-        width: 100%;
-      }
-
-      .gnb {
-        ul {
-          display: none;
-        }
-
-        .hamburger-btn {
-          display: block;
-        }
-      }
-    }
-  }
-}
+@import "../layout.css";
 
 /* hero 베너 섹션 */
 #hero-section {
   img {
     width: 100%;
-    height: 640px;
+    min-height: 400px;
     object-fit: cover;
-
-    @media screen and (max-width: 768px) {
-      height: 360px;
-    }
   }
 }
 
@@ -153,7 +96,11 @@ header {
 /* Challengers 섹션 */
 #challengers-section {
   margin-top: var(--spacing-section-lg);
-  gap: var(--spacing-section-sm);
+  gap: var(--spacing-9);
+
+  h2 {
+    padding: 0px var(--spacing-4);
+  }
 
   .container {
     width: 100%;
@@ -227,7 +174,6 @@ header {
 
   @media screen and (max-width: 768px) {
     margin-top: 120px;
-    gap: var(--spacing-9);
 
     .container {
       height: 600px;
@@ -283,7 +229,11 @@ header {
 /* 인공지능사관학교 섹션 */
 #ai-school-section {
   margin-top: var(--spacing-section-lg);
-  gap: var(--spacing-section-sm);
+  gap: var(--spacing-9);
+
+  h2 {
+    padding: 0px var(--spacing-4);
+  }
 
   .yt-container {
     position: relative;
@@ -322,7 +272,6 @@ header {
 
   @media screen and (max-width: 768px) {
     margin-top: 120px;
-    gap: var(--spacing-9);
 
     .yt-container {
       height: 480px;
@@ -454,7 +403,7 @@ header {
       }
 
       .card > .description {
-        padding: var(--spacing-3);
+        padding: 16px 16px 20px 16px;
 
         h3 {
           font-size: var(--font-size-md);
@@ -465,5 +414,133 @@ header {
         }
       }
     }
+  }
+}
+
+/* 신청 대상자인가요 섹션 */
+#requirement-section {
+  margin-top: var(--spacing-section-lg);
+  gap: var(--spacing-section-sm);
+  padding: 0px var(--spacing-9);
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    ul {
+      flex-wrap: wrap;
+      gap: var(--spacing-4) 0px;
+    }
+
+    .card {
+      max-width: 500px;
+      width: 100%;
+      justify-content: start;
+
+      img {
+        width: 180px;
+        object-fit: cover;
+      }
+
+      .description {
+        gap: var(--spacing-3);
+        line-height: var(--leading-normal);
+
+        p {
+          font-weight: 500;
+          font-size: var(--font-size-2xl);
+        }
+
+        &.graduation {
+          gap: var(--spacing-1);
+
+          .sub-list {
+            font-weight: 300;
+            font-size: var(--font-size-md);
+            line-height: var(--leading-relaxed);
+
+            li::before {
+              content: "•";
+              font-weight: bold;
+              font-size: 1.25em;
+              line-height: 1;
+              color: var(--color-text-muted);
+              margin-right: var(--spacing-1);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 120px;
+    gap: var(--spacing-9);
+    padding: 0px var(--spacing-4);
+
+    .container {
+      .card {
+        max-width: 380px;
+
+        img {
+          width: 120px;
+        }
+
+        .description {
+          gap: var(--spacing-2);
+
+          p {
+            font-size: var(--font-size-lg);
+          }
+
+          a {
+            font-weight: 500;
+            font-size: 14px;
+
+            span {
+              width: 14px;
+            }
+          }
+
+          &.graduation > .sub-list {
+            font-size: 14px;
+
+            li::before {
+              font-size: 1em;
+              margin-right: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 상담 신청 섹션 */
+#cs-section {
+  margin-top: var(--spacing-section-lg);
+  gap: var(--spacing-9);
+
+  h2 {
+    padding: 0px var(--spacing-4);
+  }
+
+  .container {
+    position: relative;
+
+    img {
+      min-height: 400px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .btn {
+      position: absolute;
+      bottom: 25%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 120px;
   }
 }

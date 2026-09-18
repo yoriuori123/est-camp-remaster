@@ -1,0 +1,27 @@
+@import "../reset.css";
+@import "../../dist/css/variables.css";
+@import "../utils.css";
+@import "../ui/links.css";
+@import "../ui/buttons.css";
+@import "../ui/headings.css";
+@import "../layout.css";
+
+/* 히로 섹션 */
+#hero-section {
+  img {
+    width: 100%;
+    min-height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+#reasons-section {
+  height: 100vh;
+  margin-top: var(--spacing-section-md);
+  gap: var(--spacing-section-md);
+
+  h2 {
+    color: var(--color-text-primary-frontend);
+  }
+}
