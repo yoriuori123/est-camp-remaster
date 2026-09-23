@@ -91,3 +91,10 @@ style/                          (최상위 스타일 폴더)
 ├── typography.css   (단일 파일이라 폴더링하지 않음)
 └── utils.css                (단일 파일이라 폴더링하지 않음)
 ```
+
+---
+
+<div style="display: flex; width: 100%;">
+  <img src="./public/assets/images/readme/team-4.png"  style="width: 50%" alt="1차 팀프로젝트 팀4">
+  <img src="./public/assets/images/readme/certificate.png" style="width: 50%" alt="1차 팀프로젝트 대상">
+</div>
